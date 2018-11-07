@@ -1,8 +1,8 @@
 
-.PHONY: public build local-server run
+.PHONY: clean build local-server run
 
-public:
-	rm -rf public/*
+clean:
+	rm -rf docs/*
 
 build:
 	$(shell npm bin)/parcel build app/index.html app/iframe.html --out-dir docs

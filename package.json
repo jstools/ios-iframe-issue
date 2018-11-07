@@ -1,0 +1,17 @@
+{
+  "name": "ios-iframe-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesús Manuel Germade Castiñeiras <jesus@aplazame.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.14.3"
+  }
+}

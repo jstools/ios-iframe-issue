@@ -11,3 +11,6 @@ local-server:
 	$(shell npm bin)/http-server public
 
 run: public build local-server
+
+deploy: build
+	$(shell npm bin)/gh-pages public

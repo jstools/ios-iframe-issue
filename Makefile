@@ -1,5 +1,8 @@
 
-.PHONY: clean build local-server run deploy
+.PHONY: install clean build local-server run deploy
+
+install:
+	npm install
 
 clean:
 	rm -rf public/*
@@ -12,5 +15,5 @@ local-server:
 
 run: public build local-server
 
-deploy: build
-	$(shell npm bin)/gh-pages public
+deploy: install clean build
+	$(shell npm bin)/gh-pages -d public

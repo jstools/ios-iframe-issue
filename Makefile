@@ -2,12 +2,12 @@
 .PHONY: clean build local-server run
 
 clean:
-	rm -rf docs/*
+	rm -rf public/*
 
 build:
-	$(shell npm bin)/parcel build app/index.html app/iframe.html --out-dir docs --public-url ./
+	$(shell npm bin)/parcel build app/index.html app/iframe.html --out-dir public --public-url ./
 
 local-server:
-	$(shell npm bin)/http-server docs
+	$(shell npm bin)/http-server public
 
 run: public build local-server

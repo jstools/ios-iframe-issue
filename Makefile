@@ -1,5 +1,5 @@
 
-.PHONY: clean build local-server run
+.PHONY: clean build local-server run deploy
 
 clean:
 	rm -rf public/*
